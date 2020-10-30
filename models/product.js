@@ -7,7 +7,8 @@ const schema = new mongoose.Schema({
     title: {type: String, required: true},
     description: {type: String, required: true},
     price: {type: Number, required: true},
-    avgRating: {type: Number, required: true}
+    avgRating: {type: Number, default: 0},
+    totalReviews: {type: Number, default: 0}
 });
 
 // static function that checks if candidate exists in DB
