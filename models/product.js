@@ -8,7 +8,16 @@ const schema = new mongoose.Schema({
     description: {type: String, required: true},
     price: {type: Number, required: true},
     avgRating: {type: Number, required: true}
-})
+});
+
+// static function that checks if candidate exists in DB
+schema.statics.isValidProduct = function (id) {
+    try {
+        return this.findById(mongoose.Types.ObjectId(id));   
+    } catch (error) {
+        return null;
+    }  
+};
 
 const Product = mongoose.model("Products", schema);
 

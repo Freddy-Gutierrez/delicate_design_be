@@ -7,6 +7,13 @@ const { User } = require("../models/user");
 const validate = require("../middleware/validate");
 const auth = require("../middleware/auth");
 
+
+// authenticate user, then send user info to client
+router.get("/me", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-password");
+  res.status(200).send(user);
+});
+
 // add new user
 router.post("/", validate(validateUser), async (req, res) => {
   const { username, password } = req.body;
@@ -29,12 +36,6 @@ router.post("/", validate(validateUser), async (req, res) => {
   res
     .header("x-auth-token", token)
     .send(_.pick(user, ["_id", "username"]));
-});
-
-// authenticate user, then send user info to client
-router.get("/me", auth, async (req, res) => {
-  const user = await User.findById(req.user._id).select("-password");
-  res.status(200).send(user);
 });
 
 // login user if valid credentials
