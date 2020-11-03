@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require('mongoose');
 const router = express.Router();
 const Joi = require('joi');
 const _ = require("lodash");
@@ -13,7 +14,8 @@ router.get("/:id", async (req, res) => {
   if (!product) return res.status(404).send("Product not found");
 
   let reviews = await Review.getReviews(req.params.id);
-  return res.status(200).send(reviews);
+  console.log(reviews);
+  return res.status(200).send(reviews[0]);
 });
 
 router.get("/:id/:rating", async (req, res) => {
@@ -22,11 +24,10 @@ router.get("/:id/:rating", async (req, res) => {
 
   const result = await Review.getReviews(req.params.id);  
   const filtered = result[0].reviews.filter((r) => r.rating == req.params.rating);
-  console.log(result[0].reviews);
   return res.status(200).send(filtered);
 });
 
-// add comment to corresponding candidate if user is logged in and hasn't commented yet
+// add review to corresponding product
 router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
   const { rating, review } = req.body;
 
@@ -71,7 +72,7 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
   }  
 });
 
-// update a user comment on a candidate
+// update a user comment product
 router.put("/:id", [auth, validate(validateReview)], async (req, res) => {
   const { rating, name, comment: com } = req.body;
   const candidate = await Candidate.isValidCandidate(req.params.id);
@@ -92,6 +93,24 @@ router.put("/:id", [auth, validate(validateReview)], async (req, res) => {
     }
   }
   return res.status(404).send("User has not posted a comment yet");
+});
+
+// update helpful array 
+router.put("/helpful/:id", [auth], async (req, res) => {
+  const result = await Review.findOne({'reviews._id' : mongoose.Types.ObjectId(req.params.id)});  
+  const reviewIndex = result.reviews.findIndex((r) => String(r._id) === String(req.params.id));
+  let helpful = result.reviews[reviewIndex].helpful;
+
+  if (helpful.includes(req.user._id)){
+    const i = helpful.indexOf(req.user._id);
+    helpful.splice(i, 1);    
+    await result.save();
+    return res.status(200).send(result);
+  }
+
+    helpful.push(mongoose.Types.ObjectId(req.user._id));
+    await result.save();
+    return res.status(200).send(result);
 });
 
 // calculates avg rating of a candidate
