@@ -45,7 +45,7 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
       reviews: []
     });
 
-    productReview.reviews.push({userId: req.user._id, name: req.user.username, rating, review, date: moment().tz('America/Los_Angeles').format("dddd, MMMM Do YYYY, h:mm:ss") });
+    productReview.reviews.push({userId: req.user._id, name: req.user.username, rating, review, date: moment.tz(moment(),'America/Los_Angeles').format("dddd, MMMM Do YYYY, h:mm:ss") });
     productReview.set({avgRating: rating});
     await productReview.save();
 
@@ -59,7 +59,7 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
       if (String(req.user._id) === String(c.userId))
         return res.status(403).send("user may only comment once per product");
 
-    productReview[0].reviews.push({ userId: req.user._id, name: req.user.username , rating, review, date: moment().tz('America/Los_Angeles').format("dddd, MMMM Do YYYY, h:mm:ss") });
+    productReview[0].reviews.push({ userId: req.user._id, name: req.user.username , rating, review, date: moment.tz(moment(),'America/Los_Angeles').format("dddd, MMMM Do YYYY, h:mm:ss") });
 
     const avgRating = calcAvgRating(productReview[0].reviews);
     productReview[0].set({ avgRating });
