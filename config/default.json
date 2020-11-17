@@ -1,4 +1,4 @@
 {
-    "db":"ddbe",
+    "db":"mongodb://localhost/DelicateDesignCo",
     "jwtPrivateKey": "a"
 }

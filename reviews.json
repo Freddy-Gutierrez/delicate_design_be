@@ -34,7 +34,11 @@
       "review": "really awesome cup, starts to come off after some washes."
     },
     {
-      "helpful": [],
+      "helpful": [
+        {
+          "$oid": "5fb32d079fef8a409885aedb"
+        }
+      ],
       "date": "Monday, November 16th 2020, 5:53:59 pm",
       "_id": {
         "$oid": "5fb32d4104ec5b1f2400d676"
@@ -47,7 +51,7 @@
       "review": "love the cup!"
     }
   ],
-  "__v": 2
+  "__v": 9
 },{
   "_id": {
     "$oid": "5fb32e6f04ec5b1f2400d678"
