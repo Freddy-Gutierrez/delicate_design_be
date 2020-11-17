@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require('mongoose');
+const moment = require('moment');
 const router = express.Router();
 const Joi = require('joi');
 const _ = require("lodash");
@@ -44,7 +45,7 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
       reviews: []
     });
 
-    productReview.reviews.push({userId: req.user._id, name: req.user.username, rating, review});
+    productReview.reviews.push({userId: req.user._id, name: req.user.username, rating, review, date: moment().format("dddd, MMMM Do YYYY, h:mm:ss a") });
     productReview.set({avgRating: rating});
     await productReview.save();
 
@@ -58,7 +59,7 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
       if (String(req.user._id) === String(c.userId))
         return res.status(403).send("user may only comment once per product");
 
-    productReview[0].reviews.push({ userId: req.user._id, name: req.user.username , rating, review });
+    productReview[0].reviews.push({ userId: req.user._id, name: req.user.username , rating, review, date: moment().format("dddd, MMMM Do YYYY, h:mm:ss a") });
 
     const avgRating = calcAvgRating(productReview[0].reviews);
     productReview[0].set({ avgRating });
