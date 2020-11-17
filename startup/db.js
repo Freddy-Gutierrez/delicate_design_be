@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const config = require("config");
-const {Product} = require('../models/product');
 
 module.exports = function () {
   const db = config.get("db");

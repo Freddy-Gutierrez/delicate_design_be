@@ -46,10 +46,10 @@ router.post("/", validate(validateProduct), async(req,res) => {
         src,
         alt, 
         productType,
-         title, 
-         description, 
-         price, 
-         avgRating
+        title, 
+        description, 
+        price, 
+        avgRating
     });
     await product.save();
     res.status(200).send(product);

@@ -7,15 +7,8 @@ const { User } = require("../models/user");
 const validate = require("../middleware/validate");
 const auth = require("../middleware/auth");
 
-
-// authenticate user, then send user info to client
-router.get("/me", auth, async (req, res) => {
-  const user = await User.findById(req.user._id).select("-password");
-  res.status(200).send(user);
-});
-
 // add new user
-router.post("/", validate(validateUser), async (req, res) => {
+router.post("/signup", validate(validateUser), async (req, res) => {
   const { username, password } = req.body;
   const isAdmin = username === "freddyg" ? true : false;
 
@@ -56,7 +49,7 @@ router.post("/login", validate(validateUser), async (req, res) => {
   });
 });
 
-// validate user using hapi/joi
+// validate user using joi
 function validateUser(user) {
   const schema = Joi.object({
     username: Joi.string().min(5).max(20).required(),

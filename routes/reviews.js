@@ -56,7 +56,7 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
   else{
     for (let c of productReview[0].reviews)
       if (String(req.user._id) === String(c.userId))
-        return res.status(403).send("user may only comment once per candidate");
+        return res.status(403).send("user may only comment once per product");
 
     productReview[0].reviews.push({ userId: req.user._id, name: req.user.username , rating, review });
 
@@ -70,29 +70,6 @@ router.post("/:id", [auth, validate(validateReview)], async (req, res) => {
 
     return res.status(200).send(productReview[0]);
   }  
-});
-
-// update a user comment product
-router.put("/:id", [auth, validate(validateReview)], async (req, res) => {
-  const { rating, name, comment: com } = req.body;
-  const candidate = await Candidate.isValidCandidate(req.params.id);
-  if (!candidate) return res.status(404).send("Candidate not found");
-
-  for (let comment of candidate.comments) {
-    if (String(req.user._id) === String(comment.userId)) {
-      comment.set({
-        name,
-        rating,
-        comment: com,
-        date: Date.now(),
-      });
-      const avgRating = calcAvgRating(candidate.comments);
-      candidate.set({ rating: avgRating });
-      await candidate.save();
-      return res.status(200).send(candidate);
-    }
-  }
-  return res.status(404).send("User has not posted a comment yet");
 });
 
 // update helpful array 
@@ -113,7 +90,7 @@ router.put("/helpful/:id", [auth], async (req, res) => {
     return res.status(200).send(result);
 });
 
-// calculates avg rating of a candidate
+// calculates avg rating of a product
 function calcAvgRating(reviews) {
   let avgRating = 0;
   for (let review of reviews) {
