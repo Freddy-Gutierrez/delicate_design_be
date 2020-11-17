@@ -15,6 +15,7 @@ function auth(req, res, next) {
     // 401 unauthorized
     // 403 forbidden
     // internal server error
+    
     res.status(400).send("Invalid token");
   }
 }
