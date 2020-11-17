@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "5fb32a709fef8a409885aed8"
+  },
+  "username": "johnsmith",
+  "password": "$2b$10$uYKMptHX2vEbcymD0NGk1O9.X56bvQoNnaRR3EgPnDgJcjOf4k1GO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb32c769fef8a409885aed9"
+  },
+  "username": "abigail112",
+  "password": "$2b$10$Um9PsaiTO9UPPzm..OOYYesmhie7.ds1M0hFDPFg34h.loDdx667q",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb32d079fef8a409885aedb"
+  },
+  "username": "joesmoe",
+  "password": "$2b$10$qI.i.N7KEwimrmT3wEX7F.rAHNSU4n11BRbH6k73DnVPwuYgASRsO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb32e5b04ec5b1f2400d677"
+  },
+  "username": "jackey12",
+  "password": "$2b$10$aFv8hlKocrJD/Yj5asNm8OxOBmhMAV7rKVRLZS2/JL1OHSDB/oQ3C",
+  "__v": 0
+}]

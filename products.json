@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "5fb318679f969b28f8874490"
+  },
+  "avgRating": 4.3,
+  "totalReviews": 3,
+  "src": "/tumblers/dodgers",
+  "alt": "dodger tumbler",
+  "productType": "Tumbler",
+  "title": "Dodger Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb318cd9f969b28f8874491"
+  },
+  "avgRating": 2,
+  "totalReviews": 1,
+  "src": "/tumblers/angels",
+  "alt": "angel tumbler",
+  "productType": "Tumbler",
+  "title": "Angel Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb318e39f969b28f8874492"
+  },
+  "avgRating": 0,
+  "totalReviews": 0,
+  "src": "/tumblers/badbunny",
+  "alt": "bad bunny tumbler",
+  "productType": "Tumbler",
+  "title": "Bad Bunny Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb319039f969b28f8874493"
+  },
+  "avgRating": 0,
+  "totalReviews": 0,
+  "src": "/tumblers/butterfly_blue",
+  "alt": "blue butterfly tumbler",
+  "productType": "Tumbler",
+  "title": "Blue Butterfly Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb319129f969b28f8874494"
+  },
+  "avgRating": 0,
+  "totalReviews": 0,
+  "src": "/tumblers/butterfly_pink",
+  "alt": "pink butterfly tumbler",
+  "productType": "Tumbler",
+  "title": "Pink Butterfly Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb319279f969b28f8874495"
+  },
+  "avgRating": 0,
+  "totalReviews": 0,
+  "src": "/tumblers/disney_castle",
+  "alt": "disney castle tumbler",
+  "productType": "Tumbler",
+  "title": "Disney Castle Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb3193a9f969b28f8874496"
+  },
+  "avgRating": 0,
+  "totalReviews": 0,
+  "src": "/tumblers/hulk",
+  "alt": "hulk tumbler",
+  "productType": "Tumbler",
+  "title": "Hulk Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fb319549f969b28f8874497"
+  },
+  "avgRating": 0,
+  "totalReviews": 0,
+  "src": "/tumblers/sunflower",
+  "alt": "sunflower tumbler",
+  "productType": "Tumbler",
+  "title": "Sunflower Tumbler",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt mi sit amet sodales euismod. Ut sed ante imperdiet, vulputate sem pulvinar, ultricies sapien. Fusce auctor, massa sit amet pharetra sollicitudin, urna mi rhoncus sapien, vitae feugiat augue sapien quis tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec ut nisl ut lorem ultricies accumsan id eget massa. Fusce ultricies velit eu porta scelerisque. Sed mi ex, mollis sed tortor rutrum, euismod iaculis eros. Vestibulum mattis urna id leo porttitor placerat. Nulla sit amet erat ut quam mattis varius. Cras at laoreet lorem. Ut quis quam sit amet risus commodo consequat. Quisque gravida mauris facilisis dui ornare, vel auctor nisi aliquam. Nulla eget lacus leo. Suspendisse iaculis mauris volutpat, tincidunt erat nec, iaculis orci. Sed congue mi quis ultricies varius. Suspendisse vitae augue risus.",
+  "price": 25,
+  "__v": 0
+}]

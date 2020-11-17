@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "5fb31b249f969b28f8874498"
+  },
+  "productId": {
+    "$oid": "5fb318679f969b28f8874490"
+  },
+  "avgRating": "4.3",
+  "reviews": [
+    {
+      "helpful": [],
+      "date": "Monday, November 16th 2020, 4:11:03 pm",
+      "_id": {
+        "$oid": "5fb31b249f969b28f8874499"
+      },
+      "userId": {
+        "$oid": "5f9b44a13301b33b18f46ffd"
+      },
+      "name": "johnsmith",
+      "rating": 5,
+      "review": "my brother loves this cup!"
+    },
+    {
+      "helpful": [],
+      "date": "Monday, November 16th 2020, 5:06:14 pm",
+      "_id": {
+        "$oid": "5fb32cae9fef8a409885aeda"
+      },
+      "userId": {
+        "$oid": "5fb32c769fef8a409885aed9"
+      },
+      "name": "abigail112",
+      "rating": 4,
+      "review": "really awesome cup, starts to come off after some washes."
+    },
+    {
+      "helpful": [],
+      "date": "Monday, November 16th 2020, 5:53:59 pm",
+      "_id": {
+        "$oid": "5fb32d4104ec5b1f2400d676"
+      },
+      "userId": {
+        "$oid": "5fb32d079fef8a409885aedb"
+      },
+      "name": "joesmoe",
+      "rating": 4,
+      "review": "love the cup!"
+    }
+  ],
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "5fb32e6f04ec5b1f2400d678"
+  },
+  "productId": {
+    "$oid": "5fb318cd9f969b28f8874491"
+  },
+  "avgRating": "2",
+  "reviews": [
+    {
+      "helpful": [],
+      "date": "Monday, November 16th 2020, 5:53:59 pm",
+      "_id": {
+        "$oid": "5fb32e6f04ec5b1f2400d679"
+      },
+      "userId": {
+        "$oid": "5fb32e5b04ec5b1f2400d677"
+      },
+      "name": "jackey12",
+      "rating": 2,
+      "review": "color was a bit faded."
+    }
+  ],
+  "__v": 0
+}]
